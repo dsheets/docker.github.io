@@ -94,11 +94,8 @@ The following are **unsupported file system events**:
 * Close events
 * Unmount events (see <a href="osxfs.md#mounts">Mounts</a>)
 
-Some events may be delivered multiple times. Events are not delivered for bind
-mounts from symlinks (notably `/tmp` will not deliver inotify events but
-`/private/tmp` will). These limitations do not apply to events between
-containers, only to those events originating in OS X.
-
+Some events may be delivered multiple times. These limitations do not apply to
+events between containers, only to those events originating in OS X.
 
 ### Mounts
 
